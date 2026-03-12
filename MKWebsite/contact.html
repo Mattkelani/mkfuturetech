@@ -1,0 +1,381 @@
+﻿﻿<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | MKFutureTECH</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Poppins:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1f6dff",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#0f1623",
+                        "slate-custom": {
+                            900: "#0A1F44",
+                            800: "#172236",
+                            700: "#2e436b",
+                            100: "#f2f4f7"
+                        }
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "heading": ["Poppins", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3 { font-family: 'Poppins', sans-serif; }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 transition-colors duration-300">
+<!-- Header / Navigation -->
+<header class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center gap-2">
+<div class="">
+<img src="assets/logos/logo.png" alt="MKFutureTECH Logo" class="w-20 h-10"/>
+</div>
+<span class="text-2xl font-heading font-bold tracking-tight text-slate-900 dark:text-white">MKFutureTECH</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="services.html">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+<a class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/25" href="https://wa.me/2349123530688?text=Hello%20MKFutureTECH%2C%20I%20need%20support." target="_blank" rel="noopener noreferrer">Request Service</a>
+</nav>
+<div class="md:hidden">
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Open mobile menu" class="inline-flex items-center justify-center rounded-lg p-2 text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" id="mobile-menu-open" type="button">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Mobile Sidebar Menu -->
+<div class="fixed inset-0 z-[60] hidden" id="mobile-menu-container">
+<div class="absolute inset-0 bg-slate-900/50 opacity-0 transition-opacity duration-300" id="mobile-menu-backdrop"></div>
+<aside aria-label="Mobile navigation" class="absolute right-0 top-0 h-full w-72 max-w-[85vw] bg-white dark:bg-slate-900 border-l border-slate-200 dark:border-slate-700 shadow-2xl translate-x-full transition-transform duration-300 ease-out" id="mobile-menu">
+<div class="flex items-center justify-between px-5 py-4 border-b border-slate-200 dark:border-slate-700">
+<span class="text-lg font-heading font-bold">Menu</span>
+<button aria-label="Close mobile menu" class="inline-flex items-center justify-center rounded-lg p-2 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" id="mobile-menu-close" type="button">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+</div>
+<nav class="flex flex-col p-5 gap-2">
+<a class="rounded-lg px-3 py-2 text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="index.html">Home</a>
+<a class="rounded-lg px-3 py-2 text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="services.html">Services</a>
+<a class="rounded-lg px-3 py-2 text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="about.html">About</a>
+<a class="rounded-lg px-3 py-2 text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="contact.html">Contact</a>
+<a class="mt-4 bg-primary hover:bg-primary/90 text-white px-5 py-3 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/25" href="https://wa.me/2349123530688?text=Hello%20MKFutureTECH%2C%20I%20need%20support." target="_blank" rel="noopener noreferrer">Request Service</a>
+</nav>
+</aside>
+</div>
+<main>
+<!-- Hero Section -->
+<section class="relative py-20 lg:py-32 overflow-hidden bg-slate-custom-900 dark:bg-background-dark">
+<div class="absolute inset-0 opacity-20 pointer-events-none" data-alt="Abstract blue dots pattern background" style="background-image: radial-gradient(circle at 2px 2px, rgba(31, 109, 255, 0.2) 1px, transparent 0); background-size: 40px 40px;">
+</div>
+<div class="container mx-auto px-6 text-center relative z-10">
+<span class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest uppercase bg-primary/20 text-primary rounded-full">Contact Our Team</span>
+<h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 tracking-tight">Get In <span class="text-primary">Touch</span></h1>
+<p class="text-lg md:text-xl text-slate-custom-100/80 max-w-2xl mx-auto leading-relaxed">
+                    We're here to help your business with reliable IT solutions. Let's discuss how we can power your digital future.
+                </p>
+</div>
+</section>
+<!-- Contact Cards Section -->
+<section class="py-12 -mt-16 container mx-auto px-6 relative z-20">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Phone -->
+<div class="bg-white dark:bg-slate-custom-800 p-8 rounded-xl shadow-xl shadow-black/5 border border-slate-custom-700/10 flex flex-col items-center text-center group hover:-translate-y-1 transition-transform">
+<div class="size-14 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">call</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Phone</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-4">Available Mon-Fri 9am-6pm</p>
+<a class="text-primary font-semibold hover:underline" href="tel:+2349123530688">+234 912 353 0688</a>
+</div>
+<!-- Email -->
+<div class="bg-white dark:bg-slate-custom-800 p-8 rounded-xl shadow-xl shadow-black/5 border border-slate-custom-700/10 flex flex-col items-center text-center group hover:-translate-y-1 transition-transform">
+<div class="size-14 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">mail</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Email</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-4">Send us your inquiry anytime</p>
+<a class="text-primary font-semibold hover:underline" href="mailto:info@mkfuturetech.com">info@mkfuturetech.com</a>
+</div>
+<!-- Website -->
+<div class="bg-white dark:bg-slate-custom-800 p-8 rounded-xl shadow-xl shadow-black/5 border border-slate-custom-700/10 flex flex-col items-center text-center group hover:-translate-y-1 transition-transform">
+<div class="size-14 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">language</span>
+</div>
+<h3 class="text-lg font-bold mb-2">Website</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-4">Explore our portal</p>
+<a class="text-primary font-semibold hover:underline" href="https://www.mkfuturetech.com">www.mkfuturetech.com</a>
+</div>
+<!-- WhatsApp -->
+<div class="bg-white dark:bg-slate-custom-800 p-8 rounded-xl shadow-xl shadow-black/5 border border-slate-custom-700/10 flex flex-col items-center text-center group hover:-translate-y-1 transition-transform">
+<div class="size-14 bg-primary/10 text-primary rounded-full flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">chat</span>
+</div>
+<h3 class="text-lg font-bold mb-2">WhatsApp</h3>
+<p class="text-slate-500 dark:text-slate-400 text-sm mb-4">Instant support channel</p>
+<a class="text-primary font-semibold hover:underline" href="https://wa.me/2349123530688">+234 912 353 0688</a>
+</div>
+</div>
+</section>
+<!-- Form Section -->
+<section class="py-20 bg-background-light dark:bg-background-dark">
+<div class="container mx-auto px-6 max-w-4xl">
+<div class="bg-white dark:bg-slate-custom-800 rounded-2xl shadow-2xl overflow-hidden border border-slate-custom-700/10">
+<div class="grid grid-cols-1 lg:grid-cols-5">
+<div class="lg:col-span-2 bg-primary p-12 text-white flex flex-col justify-between">
+<div>
+<h2 class="text-3xl font-bold mb-6">Send us a Message</h2>
+<p class="text-white/80 mb-8 leading-relaxed">Fill out the form and our team will get back to you within 24 hours.</p>
+<ul class="space-y-6">
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined">check_circle</span>
+<span class="text-sm">Priority Business Support</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined">check_circle</span>
+<span class="text-sm">Free Consultation Call</span>
+</li>
+<li class="flex items-start gap-4">
+<span class="material-symbols-outlined">check_circle</span>
+<span class="text-sm">Expert Tech Insights</span>
+</li>
+</ul>
+</div>
+<div class="mt-12">
+<p class="text-xs uppercase tracking-widest font-bold opacity-60">Follow Us</p>
+<div class="flex gap-4 mt-4">
+<a class="size-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors text-white" href="#" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+<svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+<path d="M18.9 2H22l-6.8 7.8L23 22h-6.4l-5-6.5L5.9 22H2.8l7.3-8.4L1 2h6.6l4.5 5.9L18.9 2Zm-1.1 18h1.8L6.5 3.9H4.6L17.8 20Z"/>
+</svg>
+</a>
+<a class="size-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors text-white" href="#" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+<svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+<path d="M13.5 22v-8h2.7l.4-3.1h-3.1V9c0-.9.3-1.6 1.6-1.6H17V4.6c-.4-.1-1.7-.2-3.2-.2-3.1 0-5.2 1.9-5.2 5.3v2.2H6v3.1h2.6v8h4.9Z"/>
+</svg>
+</a>
+<a class="size-8 rounded-full bg-white/10 flex items-center justify-center hover:bg-white/20 transition-colors text-white" href="#" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+<svg class="w-4 h-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+<path d="M21.7 4.3c.4.2.5.6.4 1.1l-3.3 15.3c-.1.6-.5.8-1 .8-.3 0-.6-.1-.9-.3l-4.8-3.5-2.3 2.2c-.2.2-.4.3-.7.3-.1 0-.2 0-.3-.1-.4-.1-.6-.4-.6-.8v-3.1l8.7-8.1c.2-.2.2-.3.1-.4-.1-.1-.3-.1-.5 0l-10.7 6.7-4.5-1.4c-.4-.1-.6-.4-.6-.8 0-.4.2-.7.6-.9L20.6 4c.4-.2.8-.2 1.1.3Z"/>
+</svg>
+</a>
+</div>
+</div>
+</div>
+<div class="lg:col-span-3 p-8 md:p-12">
+<form action="#" class="space-y-6" id="contact-form" data-emailjs-public-key="NDV62TqtZQJCrQIKY" data-emailjs-service-id="service_ba1n72i" data-emailjs-template-id="template_sbqftle">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold mb-2 text-slate-700 dark:text-slate-300">Name</label>
+<input class="w-full bg-slate-custom-100 dark:bg-background-dark border-none rounded-lg p-3.5 focus:ring-2 focus:ring-primary outline-none transition-all dark:placeholder:text-slate-500" placeholder="John Doe" type="text" name="from_name" autocomplete="name" required/>
+</div>
+<div>
+<label class="block text-sm font-bold mb-2 text-slate-700 dark:text-slate-300">Email Address</label>
+<input class="w-full bg-slate-custom-100 dark:bg-background-dark border-none rounded-lg p-3.5 focus:ring-2 focus:ring-primary outline-none transition-all dark:placeholder:text-slate-500" placeholder="john@company.com" type="email" name="reply_to" autocomplete="email" required/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-bold mb-2 text-slate-700 dark:text-slate-300">Phone</label>
+<input class="w-full bg-slate-custom-100 dark:bg-background-dark border-none rounded-lg p-3.5 focus:ring-2 focus:ring-primary outline-none transition-all dark:placeholder:text-slate-500" placeholder="+234..." type="tel" name="phone" autocomplete="tel"/>
+</div>
+<div>
+<label class="block text-sm font-bold mb-2 text-slate-700 dark:text-slate-300">Subject</label>
+<select class="w-full bg-slate-custom-100 dark:bg-background-dark border-none rounded-lg p-3.5 focus:ring-2 focus:ring-primary outline-none transition-all" name="subject" required>
+<option>General Inquiry</option>
+<option>IT Consultation</option>
+<option>Project Request</option>
+<option>Support Ticket</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-sm font-bold mb-2 text-slate-700 dark:text-slate-300">Message</label>
+<textarea class="w-full bg-slate-custom-100 dark:bg-background-dark border-none rounded-lg p-3.5 focus:ring-2 focus:ring-primary outline-none transition-all dark:placeholder:text-slate-500" placeholder="How can we help you today?" rows="4" name="message" required></textarea>
+</div>
+<div class="hidden" aria-hidden="true">
+<label class="block text-sm font-bold mb-2 text-slate-700 dark:text-slate-300">Website</label>
+<input class="w-full bg-slate-custom-100 dark:bg-background-dark border-none rounded-lg p-3.5 focus:ring-2 focus:ring-primary outline-none transition-all dark:placeholder:text-slate-500" placeholder="https://example.com" type="url" name="website" tabindex="-1" autocomplete="off"/>
+</div>
+<button class="w-full bg-primary text-white font-bold py-4 rounded-lg hover:bg-primary/90 transition-all flex items-center justify-center gap-2 shadow-lg shadow-primary/30" type="submit">
+<span class="material-symbols-outlined">send</span>
+                                    Send Message
+                                </button>
+<p class="text-sm font-medium text-slate-600 dark:text-slate-300" id="contact-form-status" aria-live="polite"></p>
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 bg-primary/5 dark:bg-slate-custom-900/40">
+<div class="container mx-auto px-6 text-center">
+<h2 class="text-3xl md:text-4xl font-bold mb-4">Need IT Support Now?</h2>
+<p class="text-slate-500 dark:text-slate-400 mb-10 max-w-xl mx-auto">Get connected with our support agents instantly via WhatsApp or start a formal service request.</p>
+<div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+<a class="w-full sm:w-auto px-10 py-4 bg-primary text-white font-bold rounded-xl hover:scale-105 transition-transform flex items-center justify-center gap-2" href="https://wa.me/2349123530688?text=Hello%20MKFutureTECH%2C%20I%20need%20support." rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined">rocket_launch</span>
+                        Request Service
+                    </a>
+<a class="w-full sm:w-auto px-10 py-4 border-2 border-primary text-primary font-bold rounded-xl hover:bg-primary hover:text-white transition-all flex items-center justify-center gap-2" href="https://wa.me/2349123530688?text=Hello%20MKFutureTECH%2C%20I%20need%20support." rel="noopener noreferrer" target="_blank"><span class="material-symbols-outlined">chat</span>                        WhatsApp Chat</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-navy-deep text-white pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-12 mb-16 border-b border-white/10 pb-16">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="">
+<img src="assets/logos/logo.png" alt="MKFutureTECH Logo" class="w-20 h-10"/>
+</div>
+<span class="text-xl font-heading font-bold">MKFutureTECH</span>
+</div>
+<p class="text-blue-100/70 leading-relaxed">
+                        Making I.T Simple for every user. We bridge the gap between complex technology and your success.
+                    </p>
+</div>
+<div>
+<h5 class="text-lg font-bold mb-6">Quick Links</h5>
+<ul class="space-y-4 text-blue-100/70">
+<li><a class="hover:text-primary transition-colors" href="#">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Services</a></li>
+<li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-lg font-bold mb-6">Services</h5>
+<ul class="space-y-4 text-blue-100/70">
+<li><a class="hover:text-primary transition-colors" href="services.html">Computer Repair</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Network Setup</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Cloud Solutions</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Cybersecurity</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-lg font-bold mb-6">Contact Info</h5>
+<ul class="space-y-4 text-blue-100/70">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+                            Lagos, Nigeria
+                        </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+                            +234 912 353 0688
+                        </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+                            info@mkfuturetech.com
+                        </li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 text-blue-100/50 text-sm">
+<p>Â© 2026 MKFutureTECH. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    (function () {
+        const container = document.getElementById('mobile-menu-container');
+        const menu = document.getElementById('mobile-menu');
+        const backdrop = document.getElementById('mobile-menu-backdrop');
+        const openBtn = document.getElementById('mobile-menu-open');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const focusableSelector = 'a, button, [tabindex]:not([tabindex="-1"])';
+
+        if (!container || !menu || !backdrop || !openBtn || !closeBtn) return;
+
+        const setOpenState = (isOpen) => {
+            openBtn.setAttribute('aria-expanded', String(isOpen));
+        };
+
+        const openMenu = () => {
+            container.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+            requestAnimationFrame(() => {
+                backdrop.classList.remove('opacity-0');
+                menu.classList.remove('translate-x-full');
+            });
+            setOpenState(true);
+            closeBtn.focus();
+        };
+
+        const closeMenu = () => {
+            backdrop.classList.add('opacity-0');
+            menu.classList.add('translate-x-full');
+            setOpenState(false);
+            setTimeout(() => {
+                container.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            }, 300);
+            openBtn.focus();
+        };
+
+        openBtn.addEventListener('click', openMenu);
+        closeBtn.addEventListener('click', closeMenu);
+        backdrop.addEventListener('click', closeMenu);
+
+        menu.querySelectorAll(focusableSelector).forEach((el) => {
+            if (el.tagName === 'A') {
+                el.addEventListener('click', closeMenu);
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !container.classList.contains('hidden')) {
+                closeMenu();
+            }
+        });
+    })();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="js/contact-emailjs.js"></script>
+</body></html>
+
+
+
+
+
+
+
+
+
+
+

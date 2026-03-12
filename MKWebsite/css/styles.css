@@ -1,0 +1,11 @@
+/* Custom CSS for MKFutureTECH
+   This file is intentionally minimal because styles are primarily provided
+   by Tailwind CSS utility classes via the CDN.
+
+   Add any global overrides or additional styles here.
+*/
+
+/* Ensure the body uses the same font stack as Tailwind config */
+body {
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}

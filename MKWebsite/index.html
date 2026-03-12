@@ -1,0 +1,472 @@
+﻿<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MKFutureTECH</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Poppins:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="css/styles.css" />
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1f6dff",
+                        "background-light": "#f5f6f8",
+                        "background-dark": "#0f1623",
+                        "navy-deep": "#0A1F44",
+                    },
+                    fontFamily: {
+                        "display": ["Inter", "sans-serif"],
+                        "heading": ["Poppins", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+
+
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-slate-900 dark:text-slate-100 antialiased">
+<!-- Header / Navigation -->
+<header class="sticky top-0 z-50 w-full bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800 shadow-sm">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between items-center h-20">
+<div class="flex items-center gap-2">
+<div class="">
+<img src="assets/logos/logo.png" alt="MKFutureTECH Logo" class="w-20 h-10"/>
+</div>
+<span class="text-2xl font-heading font-bold tracking-tight text-slate-900 dark:text-white">MKFutureTECH</span>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="services.html">Services</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">About</a>
+<a class="text-sm font-medium hover:text-primary transition-colors" href="contact.html">Contact</a>
+<a class="bg-primary hover:bg-primary/90 text-white px-6 py-2.5 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/25" href="https://wa.me/2349123530688?text=Hello%20MKFutureTECH%2C%20I%20need%20support." target="_blank" rel="noopener noreferrer">Request Service</a>
+</nav>
+<div class="md:hidden">
+<button aria-controls="mobile-menu" aria-expanded="false" aria-label="Open mobile menu" class="inline-flex items-center justify-center rounded-lg p-2 text-slate-900 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" id="mobile-menu-open" type="button">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<!-- Mobile Sidebar Menu -->
+<div class="fixed inset-0 z-[60] hidden" id="mobile-menu-container">
+<div class="absolute inset-0 bg-slate-900/50 opacity-0 transition-opacity duration-300" id="mobile-menu-backdrop"></div>
+<aside aria-label="Mobile navigation" class="absolute right-0 top-0 h-full w-72 max-w-[85vw] bg-white dark:bg-slate-900 border-l border-slate-200 dark:border-slate-700 shadow-2xl translate-x-full transition-transform duration-300 ease-out" id="mobile-menu">
+<div class="flex items-center justify-between px-5 py-4 border-b border-slate-200 dark:border-slate-700">
+<span class="text-lg font-heading font-bold">Menu</span>
+<button aria-label="Close mobile menu" class="inline-flex items-center justify-center rounded-lg p-2 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" id="mobile-menu-close" type="button">
+<span class="material-symbols-outlined text-2xl">close</span>
+</button>
+</div>
+<nav class="flex flex-col p-5 gap-2">
+<a class="rounded-lg px-3 py-2 text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="index.html">Home</a>
+<a class="rounded-lg px-3 py-2 text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="services.html">Services</a>
+<a class="rounded-lg px-3 py-2 text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="about.html">About</a>
+<a class="rounded-lg px-3 py-2 text-base font-medium hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors" href="contact.html">Contact</a>
+<a class="mt-4 bg-primary hover:bg-primary/90 text-white px-5 py-3 rounded-lg text-sm font-bold transition-all shadow-lg shadow-primary/25" href="https://wa.me/2349123530688?text=Hello%20MKFutureTECH%2C%20I%20need%20support." target="_blank" rel="noopener noreferrer">Request Service</a>
+</nav>
+</aside>
+</div>
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-16 pb-20 lg:pt-32 lg:pb-40 bg-gradient-to-br from-navy-deep to-primary">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+<div class="grid lg:grid-cols-2 gap-12 items-center">
+<div class="flex flex-col gap-8">
+<h1 class="text-4xl md:text-6xl font-heading font-extrabold text-white leading-tight">
+                        Making I.T Simple for Businesses and Individuals
+                    </h1>
+<p class="text-lg md:text-xl text-blue-100 max-w-xl leading-relaxed">
+                        Reliable IT solutions including computer and printer repair, network setup, and digital services designed to keep your technology running smoothly.
+                    </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-white text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 transition-colors shadow-xl" href="https://wa.me/2349123530688?text=Hello%20MKFutureTECH%2C%20I%20need%20support." target="_blank" rel="noopener noreferrer">Request Support</a>
+<a class="bg-navy-deep/40 backdrop-blur-md border border-white/20 text-white px-8 py-4 rounded-xl font-bold text-lg hover:bg-navy-deep/60 transition-colors" href="tel:+2349123530688">Contact Us</a>
+</div>
+</div>
+<div class="hidden lg:block relative">
+<div class="absolute inset-0 bg-primary/20 blur-3xl rounded-full"></div>
+<img alt="Printer, computer, and electronics engineering support" class="relative rounded-2xl shadow-2xl border border-white/10" data-alt="Technician repairing a printer with computer workstation in the background" src="assets/images/hero/hero.jpg"/>
+</div>
+</div>
+</div>
+<!-- Decorative Elements -->
+<div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/2 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px]"></div>
+</section>
+<!-- Services Section -->
+<section class="py-24 bg-background-light dark:bg-background-dark" id="services">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="mb-16">
+<h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Our IT Services</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl text-lg">
+                    We provide professional technology services, designed to keep your systems secure, fast, and reliable.
+                </p>
+</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Service Card 1 -->
+<div class="bg-white dark:bg-slate-800/50 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all group">
+<div class="bg-primary/10 text-primary w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">desktop_windows</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Computer Hardware and Electronics</h3>
+<ul class="space-y-2 text-slate-600 dark:text-slate-400 text-sm">
+<li>Hardware Diagnostics</li>
+<li>OS Installation</li>
+<li>Printer and Comptuer Repair</li>
+<li>Electronics System Design</li>
+</ul>
+</div>
+<!-- Service Card 2 -->
+<div class="bg-white dark:bg-slate-800/50 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all group">
+<div class="bg-primary/10 text-primary w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">router</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Network Setup</h3>
+<ul class="space-y-2 text-slate-600 dark:text-slate-400 text-sm">
+<li>WiFi Optimization</li>
+<li>LAN/WAN Config</li>
+<li>Security Firewall</li>
+</ul>
+</div>
+<!-- Service Card 3 -->
+<div class="bg-white dark:bg-slate-800/50 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all group">
+<div class="bg-primary/10 text-primary w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">support_agent</span>
+</div>
+<h3 class="text-xl font-bold mb-4">IT Support</h3>
+<ul class="space-y-2 text-slate-600 dark:text-slate-400 text-sm">
+<li>24/7 Remote Help</li>
+<li>Maintenance Plans</li>
+<li>On-site Troubleshooting</li>
+</ul>
+</div>
+<!-- Service Card 4 -->
+<div class="bg-white dark:bg-slate-800/50 p-8 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-primary transition-all group">
+<div class="bg-primary/10 text-primary w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+<span class="material-symbols-outlined text-3xl">language</span>
+</div>
+<h3 class="text-xl font-bold mb-4">Web Development</h3>
+<ul class="space-y-2 text-slate-600 dark:text-slate-400 text-sm">
+<li>Custom Development</li>
+<li>Web App</li>
+<li>Website Management</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+</section>
+<!-- Why Choose Us Section -->
+<section class="py-24 bg-slate-50 dark:bg-slate-900/50">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+<h2 class="text-3xl md:text-4xl font-heading font-bold mb-16">Why Choose MKFutureTECH</h2>
+<div class="grid md:grid-cols-3 gap-8">
+<div class="flex flex-col items-center">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined text-5xl">verified_user</span>
+</div>
+<h4 class="text-xl font-bold mb-2">Reliable Solutions</h4>
+<p class="text-slate-600 dark:text-slate-400">Tailored IT strategies that align perfectly with your unique business goals.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined text-5xl">shutter_speed</span>
+</div>
+<h4 class="text-xl font-bold mb-2">Fast Support</h4>
+<p class="text-slate-600 dark:text-slate-400">Rapid response times to ensure your systems remain operational 24/7.</p>
+</div>
+<div class="flex flex-col items-center">
+<div class="text-primary mb-4">
+<span class="material-symbols-outlined text-5xl">workspace_premium</span>
+</div>
+<h4 class="text-xl font-bold mb-2">Professional Expertise</h4>
+<p class="text-slate-600 dark:text-slate-400">Led by industry veterans with deep technical knowledge and certifications.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="py-24 bg-white dark:bg-slate-900/30" id="testimonials">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-14">
+<div>
+<h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">What Our Clients Say</h2>
+<p class="text-slate-600 dark:text-slate-400 max-w-2xl text-lg">
+                    Real feedback from businesses and individuals we support every day.
+                </p>
+</div>
+<div class="flex items-center gap-2 text-sm text-slate-500 dark:text-slate-400">
+<span class="material-symbols-outlined text-primary">star</span>
+<span class="material-symbols-outlined text-primary">star</span>
+<span class="material-symbols-outlined text-primary">star</span>
+<span class="material-symbols-outlined text-primary">star</span>
+<span class="material-symbols-outlined text-primary">star</span>
+<span class="font-semibold text-slate-700 dark:text-slate-200">5.0</span>
+<span class="text-slate-500 dark:text-slate-400">Average rating</span>
+</div>
+</div>
+
+<div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+<figure class="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-8 shadow-sm">
+<blockquote class="text-slate-700 dark:text-slate-200 leading-relaxed text-lg">
+                    “They fixed my laptop fast and explained everything clearly. My system is now running smoothly again.”
+                </blockquote>
+<figcaption class="mt-6 flex items-center justify-between gap-4">
+<div>
+<div class="font-bold">Adebayo O.</div>
+<div class="text-sm text-slate-500 dark:text-slate-400">Individual Client</div>
+</div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-base">star</span>
+<span class="material-symbols-outlined text-base">star</span>
+<span class="material-symbols-outlined text-base">star</span>
+<span class="material-symbols-outlined text-base">star</span>
+<span class="material-symbols-outlined text-base">star</span>
+</div>
+</figcaption>
+</figure>
+
+<figure class="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-8 shadow-sm">
+<blockquote class="text-slate-700 dark:text-slate-200 leading-relaxed text-lg">
+                    “Our office WiFi was unstable. MKFutureTECH optimized the network and the speed difference is huge.”
+                </blockquote>
+<figcaption class="mt-6 flex items-center justify-between gap-4">
+<div>
+<div class="font-bold">Chidinma I.</div>
+<div class="text-sm text-slate-500 dark:text-slate-400">Small Business Owner</div>
+</div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-base">star</span>
+<span class="material-symbols-outlined text-base">star</span>
+<span class="material-symbols-outlined text-base">star</span>
+<span class="material-symbols-outlined text-base">star</span>
+<span class="material-symbols-outlined text-base">star</span>
+</div>
+</figcaption>
+</figure>
+
+<figure class="bg-slate-50 dark:bg-slate-800/40 border border-slate-200 dark:border-slate-700 rounded-2xl p-8 shadow-sm">
+<blockquote class="text-slate-700 dark:text-slate-200 leading-relaxed text-lg">
+                    “Professional support and quick turnaround. They set up our devices and security with zero stress.”
+                </blockquote>
+<figcaption class="mt-6 flex items-center justify-between gap-4">
+<div>
+<div class="font-bold">Kehinde A.</div>
+<div class="text-sm text-slate-500 dark:text-slate-400">Operations Manager</div>
+</div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-base">star</span>
+<span class="material-symbols-outlined text-base">star</span>
+<span class="material-symbols-outlined text-base">star</span>
+<span class="material-symbols-outlined text-base">star</span>
+<span class="material-symbols-outlined text-base">star</span>
+</div>
+</figcaption>
+</figure>
+</div>
+</div>
+</section>
+<!-- About Section -->
+<section class="py-24" id="about">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid lg:grid-cols-2 gap-16 items-center">
+<div class="rounded-2xl overflow-hidden shadow-2xl">
+<img alt="About MKFutureTECH" class="w-full object-cover" 
+data-alt="Team of IT professionals working in a modern office environment" 
+src="assets/images/hero/about.jpg"/>
+</div>
+<div>
+<h2 class="text-3xl md:text-4xl font-heading font-bold mb-6">About MKFutureTECH</h2>
+<div class="space-y-4 text-slate-600 dark:text-slate-400 text-lg leading-relaxed">
+<p>
+                            MKFutureTECH is a technology solutions company focused on simplifying IT for businesses and individuals. We believe that technology should be an enabler, not a barrier.
+                        </p>
+<p>
+                            Founded by <span class="text-primary font-bold">Oluwatobi Kelani</span>, we have grown from a small consultancy into a full-service technical support and digital transformation partner. Our mission is to provide world-class service with a personal touch.
+                        </p>
+</div>
+<a class="mt-8 inline-block border-2 border-primary text-primary px-8 py-3 rounded-lg font-bold hover:bg-primary hover:text-white transition-all" href="about.html">Learn More</a>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-20 bg-primary">
+<div class="max-w-4xl mx-auto px-4 text-center">
+<h2 class="text-3xl md:text-5xl font-heading font-bold text-white mb-8">Need Reliable IT Support?</h2>
+<div class="flex flex-wrap justify-center gap-4">
+<a class="bg-white text-primary px-10 py-4 rounded-xl font-bold text-lg hover:bg-blue-50 shadow-xl" href="https://wa.me/2349123530688?text=Hello%20MKFutureTECH%2C%20I%20need%20support." target="_blank" rel="noopener noreferrer">Request Service</a>
+<a class="bg-navy-deep/20 border border-white/30 text-white px-10 py-4 rounded-xl font-bold text-lg hover:bg-navy-deep/40 transition-all" href="tel:+2349123530688">Contact Us</a>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-24 bg-background-light dark:bg-background-dark" id="contact">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="text-center mb-16">
+<h2 class="text-3xl md:text-4xl font-heading font-bold mb-4">Get In Touch</h2>
+<p class="text-slate-600 dark:text-slate-400">We are ready to assist you with any technology challenge.</p>
+</div>
+<div class="grid lg:grid-cols-3 gap-8">
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">call</span>
+<h4 class="font-bold mb-2">Phone</h4>
+<p class="text-slate-600 dark:text-slate-400">+234 912 353 0688</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">mail</span>
+<h4 class="font-bold mb-2">Email</h4>
+<p class="text-slate-600 dark:text-slate-400">info@mkfuturetech.com</p>
+</div>
+<div class="bg-white dark:bg-slate-800 p-8 rounded-2xl shadow-sm border border-slate-200 dark:border-slate-700 text-center">
+<span class="material-symbols-outlined text-4xl text-primary mb-4">location_on</span>
+<h4 class="font-bold mb-2">Location</h4>
+<p class="text-slate-600 dark:text-slate-400">FASCONET COMPLEX, Olola Esate, Odo-Ona, Oluyole Ibadan</p>
+</div>
+</div>
+<div class="mt-12 text-center">
+<a class="inline-flex items-center gap-3 bg-[#25D366] text-white px-10 py-4 rounded-full font-bold text-lg hover:brightness-110 shadow-lg" href="https://wa.me/2349123530688?text=Hello%20MKFutureTECH%2C%20I%20need%20support." target="_blank" rel="noopener noreferrer">
+<svg class="w-6 h-6 fill-current" viewbox="0 0 24 24"><path d="M12.031 6.172c-2.32 0-4.591.899-6.41 2.505-1.818 1.607-2.823 3.753-2.823 6.04 0 2.288 1.004 4.434 2.823 6.041 1.819 1.606 4.09 2.504 6.41 2.504 2.32 0 4.591-.898 6.41-2.504 1.819-1.607 2.823-3.753 2.823-6.041 0-2.287-1.004-4.433-2.823-6.04-1.819-1.606-4.09-2.505-6.41-2.505zm0 15.113c-1.921 0-3.811-.741-5.322-2.073-1.511-1.332-2.353-3.111-2.353-5.008s.842-3.676 2.353-5.008c1.511-1.332 3.401-2.073 5.322-2.073 1.921 0 3.812.741 5.322 2.073 1.511 1.332 2.353 3.111 2.353 5.008s-.842 3.676-2.353 5.008c-1.51 1.332-3.401 2.073-5.322 2.073z"></path></svg>
+                    Chat on WhatsApp
+                </a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-navy-deep text-white pt-20 pb-10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid md:grid-cols-4 gap-12 mb-16 border-b border-white/10 pb-16">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="">
+<img src="assets/logos/logo.png" alt="MKFutureTECH Logo" class="w-20 h-10"/>
+</div>
+<span class="text-xl font-heading font-bold">MKFutureTECH</span>
+</div>
+<p class="text-blue-100/70 leading-relaxed">
+                        Making I.T Simple for every user. We bridge the gap between complex technology and your success.
+                    </p>
+</div>
+<div>
+<h5 class="text-lg font-bold mb-6">Quick Links</h5>
+<ul class="space-y-4 text-blue-100/70">
+<li><a class="hover:text-primary transition-colors" href="#">Home</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Services</a></li>
+<li><a class="hover:text-primary transition-colors" href="about.html">About Us</a></li>
+<li><a class="hover:text-primary transition-colors" href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-lg font-bold mb-6">Services</h5>
+<ul class="space-y-4 text-blue-100/70">
+<li><a class="hover:text-primary transition-colors" href="services.html">Computer Repair</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Printer Repair</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Network Setup</a></li>
+<li><a class="hover:text-primary transition-colors" href="services.html">Web Development</a></li>
+
+<li><a class="hover:text-primary transition-colors" href="services.html">Basic Electronics and Embedded System</a></li>
+</ul>
+</div>
+<div>
+<h5 class="text-lg font-bold mb-6">Contact Info</h5>
+<ul class="space-y-4 text-blue-100/70">
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">location_on</span>
+                            Ibadan, Nigeria
+                        </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">call</span>
+                            +234 912 353 0688
+                        </li>
+<li class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary">mail</span>
+                            info@mkfuturetech.com
+                        </li>
+</ul>
+</div>
+</div>
+<div class="flex flex-col md:flex-row justify-between items-center gap-4 text-blue-100/50 text-sm">
+<p>&copy; 2026 MKFutureTECH. All rights reserved.</p>
+<div class="flex gap-8">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer>
+<script>
+    (function () {
+        const container = document.getElementById('mobile-menu-container');
+        const menu = document.getElementById('mobile-menu');
+        const backdrop = document.getElementById('mobile-menu-backdrop');
+        const openBtn = document.getElementById('mobile-menu-open');
+        const closeBtn = document.getElementById('mobile-menu-close');
+        const focusableSelector = 'a, button, [tabindex]:not([tabindex="-1"])';
+
+        if (!container || !menu || !backdrop || !openBtn || !closeBtn) return;
+
+        const setOpenState = (isOpen) => {
+            openBtn.setAttribute('aria-expanded', String(isOpen));
+        };
+
+        const openMenu = () => {
+            container.classList.remove('hidden');
+            document.body.classList.add('overflow-hidden');
+            requestAnimationFrame(() => {
+                backdrop.classList.remove('opacity-0');
+                menu.classList.remove('translate-x-full');
+            });
+            setOpenState(true);
+            closeBtn.focus();
+        };
+
+        const closeMenu = () => {
+            backdrop.classList.add('opacity-0');
+            menu.classList.add('translate-x-full');
+            setOpenState(false);
+            setTimeout(() => {
+                container.classList.add('hidden');
+                document.body.classList.remove('overflow-hidden');
+            }, 300);
+            openBtn.focus();
+        };
+
+        openBtn.addEventListener('click', openMenu);
+        closeBtn.addEventListener('click', closeMenu);
+        backdrop.addEventListener('click', closeMenu);
+
+        menu.querySelectorAll(focusableSelector).forEach((el) => {
+            if (el.tagName === 'A') {
+                el.addEventListener('click', closeMenu);
+            }
+        });
+
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape' && !container.classList.contains('hidden')) {
+                closeMenu();
+            }
+        });
+    })();
+</script>
+</body></html>
+
+
+
+
+
+
+
+
+
+
+
